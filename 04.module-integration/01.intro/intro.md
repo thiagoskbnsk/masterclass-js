@@ -1,25 +1,5 @@
 # intro
 
-[https://whimsical.com](https://whimsical.com)
-
-### Backend & Frontend
-Backend é toda a parte que o usuário não vê.
-Frontend é toda a parte que o usuário vê.
-
-Um desenvolvedor backend se preocupa com as regras de negócios, segurança e banco de dados.
-
-Um desenvolvedor frontend é responsável por criar a interface de utilização de um site ou aplicação web.
-
-<img src="https://www.harbor.com.br/wp-content/uploads/2018/07/full-stack.png" width="400" />
-
-### O que é JS?
-
-Javascript é uma linguagem de programação desenvolvida para ser utilizada nos **navegadores** (frontend) através de um interpretador chamado V8.
-
-NodeJS é também um interpretador assim como o V8 mas desenvolvido para rodar no server-side (servidores).
-
-Com o uso do NodeJS, podemos usar javascript no backend.
-
 ### Server-side & client-side
 
 ##### Server-side
