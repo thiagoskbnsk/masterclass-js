@@ -1,5 +1,3 @@
-// Onde/quando usamos?
-
 // var
 
 // let
