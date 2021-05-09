@@ -1,0 +1,1 @@
+// fazer uma função que retorna um objeto com todas as funções básicas de uma calculadora (+, -, /, *);
