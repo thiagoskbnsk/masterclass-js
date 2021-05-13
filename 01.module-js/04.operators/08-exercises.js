@@ -1,13 +1,16 @@
 // some dois numeros
+2 + 2 // 4
 
-// obtenha o resto da divisão 2 / 3
+// obtenha o resto da divisão 3 / 2
+3 / 2 // 1.5
 
 // multiplique dois numeros
+2 * 2 // 4
 
-// atribua valores numeros à variaveis e faça a soma delas
+// atribua valores numéricos à variaveis e faça a soma delas
+const valor1 = 4;
+const valor2 = 5;
+const soma = valor1 + valor2;
 
 // compare o tipo entre "1" e 1
-
-// reescreva o código de forma diferente
-const value1 = 0;
-const value2 = value1 == false;
+typeof "1" === typeof 1
