@@ -1,0 +1,39 @@
+anatomia
+
+body {
+  color: blue;
+}
+
+seletores
+
+#, ., div
+
+cascata 
+
+h1 { color: red; }
+h1 { color: blue; }
+
+especificidade
+
+h1 > p > a
+
+!important
+
+at-rules
+@import()
+
+funcoes
+rgb()
+calc()
+
+--prefix
+
+variaveis:
+
+:root {
+  --main-bg-color: #ccc;
+}
+
+element {
+  background-color: var(--main-bg-color);
+}
