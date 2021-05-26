@@ -22,5 +22,5 @@ Um desenvolvedor frontend é responsável por criar a interface de utilização 
 
 ### Links
 
-https://www.youtube.com/watch?v=wwqOJ2o84S4&t=1426s
-https://www.youtube.com/watch?v=OWNxUVnY3pg&ab_channel=EasyTutorials
+1. https://www.youtube.com/watch?v=wwqOJ2o84S4&t=1426s
+2. https://www.youtube.com/watch?v=OWNxUVnY3pg&ab_channel=EasyTutorials

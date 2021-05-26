@@ -2,38 +2,80 @@ anatomia
 
 body {
   color: blue;
+  background: red;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  font-style: italic;
 }
+
+---
 
 seletores
 
 #, ., div
 
+body {}
+#body {}
+.body {}
+
+---
+
 cascata 
 
-h1 { color: red; }
-h1 { color: blue; }
+h1 { 
+  color: red; 
+}
+
+h1 { 
+  color: blue; 
+}
 
 especificidade
 
-h1 > p > a
+div > .paragraph {
+  color: blue;
+}
+
+.paragraph {
+  color: red;
+}
 
 !important
 
+h1 {
+  color: red !important;
+}
+
 at-rules
-@import()
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+h1 {
+  font-family: Lato;
+}
+
+---
 
 funcoes
 rgb()
 calc()
+
+h1 {
+  color: rgb(19,31,195);
+  width: calc(20px + 24px);
+}
+
+---
 
 --prefix
 
 variaveis:
 
 :root {
-  --main-bg-color: #ccc;
+  --main-bg-color: #131fc3;
+  --color: #111;
 }
 
-element {
+h1 {
   background-color: var(--main-bg-color);
 }

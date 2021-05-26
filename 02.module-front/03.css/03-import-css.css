@@ -1,0 +1,30 @@
+.main-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(18, 127, 230);
+  text-align: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background: #eee;
+}
+
+.title {
+  margin: 0;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.text {
+  text-decoration: underline;
+}
+
+.btn {
+  background: rgb(18, 127, 230);
+  height: 48px;
+  border: none;
+  padding: 0px 24px;
+  cursor: pointer;
+}

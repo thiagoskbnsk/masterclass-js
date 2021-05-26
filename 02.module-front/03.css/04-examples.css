@@ -1,1 +1,92 @@
 /* https://www.w3schools.com/cssref/ */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0 100px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 16px 0;
+  margin-bottom: 24px;
+}
+
+.header .icon {
+  margin-right: 8px;
+}
+
+.header .brand {
+  color: #212529;
+  font-size: 23px;
+}
+
+.card {
+  padding: 48px;
+  border-radius: 4px;
+  background: #eee;
+  width: 100%;
+  margin: 12px;
+}
+
+.bg-dark {
+  background: #212529;
+}
+
+.with-border {
+  border: 1px solid #ccc;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: 0;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: blue;
+  color: #fff;
+  transition: all 200ms ease;
+}
+
+.btn-primary:hover {
+  box-shadow: inset 0 0 100px rgba(0,0,0,0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-tertiary {
+  background: transparent;
+  border: 1px solid #333;
+  color: #333;
+}
+
+.footer {
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+}
+
+.footer-text {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+}
+
+.main {
+  margin-bottom: 12px;
+}
