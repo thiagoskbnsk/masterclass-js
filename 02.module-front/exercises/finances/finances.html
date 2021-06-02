@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="form-control">
+      <label for="value" class="label">Valor:</label>
+      <input type="text" id="value" class="input">
+    </div>
+
+    <button type="button" class="btn btn-primary" data-button="in">
+      Entrada
+    </button>
+    <button type="button" class="btn btn-secondary" data-button="out">
+      Saída
+    </button>
+  </header>
+  <div class="body">
+    <table class="table">
+      <thead>
+        <tr class="line-header">
+          <td class="col">Valor</td>
+          <td class="col">Tipo</td>
+          <td class="col">Balanço</td>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+      </tbody>
+    </table>
+    <h2>Total: <span id="totalValue">0</span></h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

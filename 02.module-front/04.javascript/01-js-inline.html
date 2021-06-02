@@ -7,8 +7,17 @@
   <title>Document</title>
 </head>
 <body>
+  <button type="button" data-button>Meu segundo botão</button>
   <script>
-    {...}
+    console.log('Carregou a página');
+
+    const buttonClick = () => {
+      console.log('Clicou no botão');
+    }
+
+    const button = document.querySelector('[data-button]')
+
+    button.addEventListener('click', buttonClick)
   </script>
 </body>
 </html>
