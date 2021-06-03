@@ -16,9 +16,23 @@ const calculate = () => {
   });
 
   if (splittedValues[1] === "+") {
-    input.value = splittedValues[0] + splittedValues[2];
+    input.value = splittedValues[0] + splittedValues[2]
   }
-}
+  if (splittedValues[1] === "-") {
+    input.value = splittedValues [0] - splittedValues [2]
+  }
+  if (splittedValues[1] === "*") {
+    input.value = splittedValues [0] * splittedValues [2]
+  }
+  if (splittedValues[1] === "/") {
+    input.value = splittedValues [0] / splittedValues [2]
+  }
+  // if (splittedValues[1] === "%") {
+    
+  // } Não consegui definir o %
+
+
+  }
 
 const clickButton = (type) => {
   if ("+-*/%".indexOf(type) >= 0) {
