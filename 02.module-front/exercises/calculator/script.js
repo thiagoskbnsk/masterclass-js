@@ -14,10 +14,34 @@ const calculate = () => {
   const splittedValues = input.value.split(' ').map(currentValue => {
     return Number(currentValue) || currentValue;
   });
-
-  if (splittedValues[1] === "+") {
+  
+  if (splittedValues[3] === "%"){
+    if (splittedValues[1] === "+"){
+      input.value = splittedValues[0] + (splittedValues[0]/100 * splittedValues[2]);
+    }
+    else if (splittedValues[1] === "-"){
+      input.value = splittedValues[0] - (splittedValues[0]/100 * splittedValues[2]);
+    }
+    else if (splittedValues[1] === "*"){
+      input.value = (splittedValues[2]/100) * splittedValues[0];    
+    }
+    else if (splittedValues[1] === "/"){
+      input.value = splittedValues[0] / (splittedValues[2]/100);
+    }
+  }
+  else if (splittedValues[1] === "+") {
     input.value = splittedValues[0] + splittedValues[2];
   }
+  else if (splittedValues[1] === "/") {
+    input.value = splittedValues[0] / splittedValues[2];
+  }
+  else if (splittedValues[1] === "*") {
+    input.value = splittedValues[0] * splittedValues[2];
+  }
+  else if (splittedValues[1] === "-") {
+    input.value = splittedValues[0] - splittedValues[2];
+  }
+
 }
 
 const clickButton = (type) => {
