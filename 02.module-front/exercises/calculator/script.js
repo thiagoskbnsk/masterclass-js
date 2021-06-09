@@ -1,4 +1,5 @@
 const input = document.querySelector('[data-input]');
+const history = document.querySelector('[data-history]');
 
 const btns = Object.values(document.querySelectorAll('[data-btn]'));
 
@@ -10,25 +11,36 @@ const btnsMap = btns.reduce((acc, element) => {
   return acc;
 }, {});
 
-const calculate = () => {
-  const splittedValues = input.value.split(' ').map(currentValue => {
+const calculate = (percentage) => {
+  const [firstNumber, symbol, secondNumber] = input.value.split(' ').map(currentValue => {
     return Number(currentValue) || currentValue;
   });
 
-  if (splittedValues[1] === "+") {
-    input.value = splittedValues[0] + splittedValues[2];
+  const mapSymbols = {
+    '+': (a, b) => a + b,
+    '-': (a, b) => a - b,
+    '/': (a, b) => a / b,
+    '*': (a, b) => a * b,
   }
+
+  const bValue = percentage ? (secondNumber / 100) * firstNumber : secondNumber;
+
+  const result = mapSymbols[symbol](firstNumber, bValue);
+
+  input.value = result;
+
+  history.innerText = `${firstNumber} ${symbol} ${secondNumber} = ${result}`;
 }
 
 const clickButton = (type) => {
-  if ("+-*/%".indexOf(type) >= 0) {
+  if ("+-*/".indexOf(type) >= 0) {
     input.value += ` ${type} `;
 
     return;
   }
 
-  if (type === '=') {
-    calculate();
+  if (type === '%' || type === '=') {
+    calculate(type === '%');
     
     return;
   } 
