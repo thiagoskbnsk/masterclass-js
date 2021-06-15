@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <label for="city">Cidade:</label>
+  <input type="text" data-input />
+  <button type="button" data-button>Enviar</button>
+
+  <hr />
+
+  <span data-result></span>
+  
+  <script>
+    const input = document.querySelector('[data-input]');
+    const button = document.querySelector('[data-button]');
+    const result = document.querySelector('[data-result]');
+
+    const token = '6539923089a7f5a55f9ce3e68e473050';
+
+    const getUrl = (city, token) => `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${token}`;
+
+    const getCity = async () => {
+      const url = getUrl(input.value, token);
+
+      const request = await fetch(url, {
+        method: 'GET',
+      });
+
+      const response = await request.json();
+
+      result.innerHTML = response.main.temp;
+    }
+
+    button.addEventListener('click', getCity);
+  </script>
+</body>
+</html>

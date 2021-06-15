@@ -8,11 +8,12 @@ Request:
 
 Response:
   - Status Code: (200, 301, 404, 500)
-  
+
 Ambos:
   - Headers: 
     - Campo informativo "propriedade: valor"
     - Ex: "Content-type: Application/json"
+    - Ex: "Token: XXXX"
   - Body: HTML, Content, JSON
 
 <img src="https://www.emporiotambo.com.br/wp/wp-content/uploads/2019/09/xatendimento_Prancheta-1.jpg.pagespeed.ic.zjCWakXvta.jpg" />
