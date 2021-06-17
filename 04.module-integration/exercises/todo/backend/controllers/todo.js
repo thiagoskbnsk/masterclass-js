@@ -30,7 +30,7 @@ module.exports = {
 
     list = newList;
 
-    return res.status(200).send();
+    return res.status(204).send();
   },
   edit: (req, res) => {
     const { id } = req.params;

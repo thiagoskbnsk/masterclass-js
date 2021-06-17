@@ -73,7 +73,13 @@ body {
 
 .list-item, .label-item {
   display: flex;
+  padding-right: 4px;
   align-items: center;
+}
+
+.list-item:hover {
+  background: rgb(165, 234, 247);
+  border-radius: 4px; 
 }
 
 .label-item {
@@ -82,10 +88,6 @@ body {
   border-radius: 4px;
   padding: 4px 0;
   margin-right: 4px;
-}
-
-.label-item:hover {
-  background: rgb(165, 234, 247);
 }
 
 .checkbox:checked + .title-span {
